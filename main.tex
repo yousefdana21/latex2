@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tocloft} 
+
+\renewcommand{\cfttabpresnum}{Table } 
+\renewcommand{\cfttabaftersnum}{:}   
+\setlength{\cfttabnumwidth}{4em}     
+
+\renewcommand{\cfttableader}{\cftdotfill{\cftdotsep}}
+
+\begin{document}
+
+
+\section{Images}
+\begin{figure}[!htb]
+\centering
+\begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{example-image}
+    \caption{Image 1}
+    \label{fig:image1}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{example-image}
+    \caption{Image 2}
+    \label{fig:image2}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{example-image-c}
+    \caption{Image 3}
+    \label{fig:image3}
+\end{subfigure}
+\caption{Multiple Images}
+\label{fig:multiple_images}
+\end{figure}
+This section of the guide will introduce you to the commands that can help you towards formatting the body text in different ways. It includes text formatting i.e \textbf{making texts bold}, \textit{italic}, adding comments, inserting lists (both ordered and unordered), and inserting figures and images into your \LaTeX{} document.
+
+\section{Table 1}
+
+\begin{table}[ht]
+\centering
+\caption{Student Scores}
+\label{tab:student_scores}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Name} & \textbf{Math Score} & \textbf{Science Score} \\
+\hline
+John & 90 & 80 \\
+\hline
+Sarah & 75 & 92 \\
+\hline
+Michael & 85 & 88 \\
+\hline
+\end{tabular}
+\end{table}
+This section of the guide will introduce you to the commands that can help you towards formatting the body text in different ways. It includes text formatting i.e \textbf{making texts bold}, \textit{italic}, adding comments, inserting lists (both ordered and unordered), and inserting figures and images into your \LaTeX{} document.
+
+
+\section{Table 2}
+This section of the guide will introduce you to the commands that can help you towards formatting the body text in different ways. It includes text formatting i.e \textbf{making texts bold}, \textit{italic}, adding comments, inserting lists (both ordered and unordered), and inserting figures and images into your \LaTeX{} document.
+
+\begin{table}[!htb]
+\centering
+\caption{Product Sales}
+\label{tab:product_sales}
+\begin{tabular}{|l|c|c|r|}
+\hline
+\textbf{Product} & \textbf{Sales (2019)} & \textbf{Sales (2020)} & \textbf{Change} \\
+\hline
+Product A & 1000 & 1200 & +20\% \\
+\hline
+Product B & 500 & 400 & -20\% \\
+\hline
+Product C & 1500 & 1800 & +20\% \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\section{Table 3}
+\begin{table}[ht]
+\centering
+\caption{Book Reviews}
+\label{tab:book_reviews}
+\begin{tabular}{|p{6cm}|c|p{6cm}|}
+\hline
+\textbf{Book Title} & \textbf{Rating (/10)} & \textbf{Review} \\
+\hline
+"The Catcher in the Rye" & 8.5 & A classic novel that still resonates with readers today. \\
+\hline
+"The Great Gatsby" & 9.0 & A masterpiece of American literature that explores themes of love, wealth, and class. \\
+\hline
+"1984" & 9.5 & A chilling dystopian novel that continues to be relevant in today's society. \\
+\hline
+\end{tabular}
+\end{table}
+This section of the guide will introduce you to the commands that can help you towards formatting the body text in different ways. It includes text formatting i.e \textbf{making texts bold}, \textit{italic}, adding comments, inserting lists (both ordered and unordered), and inserting figures and images into your \LaTeX{} document.
+
+
+\listoffigures
+\listoftables
+\clearpage
+
+\clearpage
+\tableofcontents
+
+\end{document}
+
